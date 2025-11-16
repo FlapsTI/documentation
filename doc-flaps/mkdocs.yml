@@ -1,0 +1,52 @@
+repo_url: https://github.com/caiomsabino/FLAPS-Tech-docs
+repo_name: FLAPS-tech-docs
+
+site_name: FLAPS Tech
+
+nav:
+  - Início: index.md
+  - AGS:
+      - Sistema Ponto: "AGS/req-ponto.md"
+      - Sistema Gestão materiais: "AGS/req-material.md"
+      - Sistema Rastreamento: "AGS/req-rastreamento.md"
+  - Claudia/Fernanda:
+      - Cartão digital: "Claudia e Fernanda/req-landingpage.md"
+  - Atas de reunião:
+      - Ata 07/11: "Atas de reunião/ata07-11.md"
+      - Ata 08/11: "Atas de reunião/ata08-11.md"
+      - Ata 11/11: "Atas de reunião/ata11-11.md"
+      - Ata 12/11: "Atas de reunião/ata12-11.md"
+      - Ata 13/11: "Atas de reunião/ata13-11.md"
+
+theme:
+  name: material
+  language: pt
+
+  palette:
+    # Modo claro
+    - scheme: default
+      primary: light-blue
+      accent: light-blue
+      toggle:
+        name: Modo escuro
+        icon: material/weather-night
+
+    # Modo escuro
+    - scheme: slate
+      primary: light-blue
+      accent: light-blue
+      toggle:
+        name: Modo claro
+        icon: material/weather-sunny
+
+  features:
+    - navigation.top
+    - navigation.tabs
+    - search.suggest
+    - content.code.copy
+
+markdown_extensions:
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: false
+      clickable_checkbox: true
