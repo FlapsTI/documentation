@@ -34,17 +34,17 @@ jobs:
 
       # 5️⃣ Build do site (gera a pasta site/)
       - name: Build MkDocs site
-        working-directory: ./documentation/doc-flaps
+        working-directory: doc-flaps
         run: mkdocs build
 
       # 6️⃣ Debug: lista arquivos gerados (opcional)
       - name: List generated site files
-        working-directory: ./documentation/doc-flaps
+        working-directory: doc-flaps
         run: ls -R site
 
       # 7️⃣ Deploy para GitHub Pages
       - name: Deploy to GitHub Pages
-        working-directory: ./documentation/doc-flaps
+        working-directory: doc-flaps
         run: mkdocs gh-deploy --force --remote-name origin
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
