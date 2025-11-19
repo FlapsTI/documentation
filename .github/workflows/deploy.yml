@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main   # ou "master", se for sua branch principal
+      - gh-pages   # ou "master", se for sua branch principal
   workflow_dispatch:  # permite rodar manualmente
 
 permissions:
